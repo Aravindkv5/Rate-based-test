@@ -1,4 +1,4 @@
-fields @timestamp, httpRequest.clientIp
+fields @timestamp, httpRequest.clientIp, action
 | filter action = 'BLOCK'
 | sort @timestamp desc
-| limit 20
+| limit 20 
