@@ -1,14 +1,14 @@
 {
-  "Name": "waf-test-",
-  "Id": "b6904029-d88a-418a-98fa-435821139484",
-  "ARN": "arn:aws:wafv2:us-east-1:464635784577:regional/webacl/waf-test-/b6904029-d88a-418a-98fa-435821139484",
+  "Name": "waf-test",
+  "Id": "25580635-726d-47ca-8022-610b7ce3d6da",
+  "ARN": "arn:aws:wafv2:ap-south-1:862094524195:regional/webacl/waf-test/25580635-726d-47ca-8022-610b7ce3d6da",
   "DefaultAction": {
     "Allow": {}
   },
   "Description": "",
   "Rules": [
     {
-      "Name": "waf-rate",
+      "Name": "rate-block",
       "Priority": 0,
       "Statement": {
         "RateBasedStatement": {
@@ -22,16 +22,16 @@
       "VisibilityConfig": {
         "SampledRequestsEnabled": true,
         "CloudWatchMetricsEnabled": true,
-        "MetricName": "waf-rate"
+        "MetricName": "rate-block"
       }
     }
   ],
   "VisibilityConfig": {
     "SampledRequestsEnabled": true,
     "CloudWatchMetricsEnabled": true,
-    "MetricName": "waf-test-"
+    "MetricName": "waf-test"
   },
   "Capacity": 2,
   "ManagedByFirewallManager": false,
-  "LabelNamespace": "awswaf:464635784577:webacl:waf-test-:"
+  "LabelNamespace": "awswaf:862094524195:webacl:waf-test:"
 }
