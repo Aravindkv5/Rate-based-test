@@ -1,0 +1,37 @@
+{
+  "Name": "waf-test-",
+  "Id": "b6904029-d88a-418a-98fa-435821139484",
+  "ARN": "arn:aws:wafv2:us-east-1:464635784577:regional/webacl/waf-test-/b6904029-d88a-418a-98fa-435821139484",
+  "DefaultAction": {
+    "Allow": {}
+  },
+  "Description": "",
+  "Rules": [
+    {
+      "Name": "waf-rate",
+      "Priority": 0,
+      "Statement": {
+        "RateBasedStatement": {
+          "Limit": 100,
+          "AggregateKeyType": "IP"
+        }
+      },
+      "Action": {
+        "Block": {}
+      },
+      "VisibilityConfig": {
+        "SampledRequestsEnabled": true,
+        "CloudWatchMetricsEnabled": true,
+        "MetricName": "waf-rate"
+      }
+    }
+  ],
+  "VisibilityConfig": {
+    "SampledRequestsEnabled": true,
+    "CloudWatchMetricsEnabled": true,
+    "MetricName": "waf-test-"
+  },
+  "Capacity": 2,
+  "ManagedByFirewallManager": false,
+  "LabelNamespace": "awswaf:464635784577:webacl:waf-test-:"
+}
