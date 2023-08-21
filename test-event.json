@@ -1,0 +1,10 @@
+{
+  "records": [
+    {
+      "message": "{\"timestamp\": 1692646091334, \"formatVersion\": 1, \"webaclId\": \"arn:aws:wafv2:us-east-1:344084055084:regional/webacl/waf-test/72722dcf-35b3-4fc9-8a91-93577f321700\", \"terminatingRuleId\": \"waf-ddos\", \"terminatingRuleType\": \"RATE_BASED\", \"action\": \"BLOCK\", \"terminatingRuleMatchDetails\": [], \"httpSourceName\": \"ALB\", \"httpSourceId\": \"344084055084-app/awseb-AWSEB-1QQZIEXZ35ULS/485aef58caf7094b\", \"ruleGroupList\": [], \"rateBasedRuleList\": [ { \"rateBasedRuleId\": \"arn:aws:wafv2:us-east-1:344084055084_MANAGED:regional/ipset/72722dcf-35b3-4fc9-8a91-93577f321700_f7a80f0f-40ea-44fc-960c-c6671a5bb414_IPV4/f7a80f0f-40ea-44fc-960c-c6671a5bb414\", \"rateBasedRuleName\": \"waf-ddos\", \"limitKey\": \"IP\", \"maxRateAllowed\": 100, \"limitValue\": \"103.28.246.208\" } ], \"nonTerminatingMatchingRules\": [], \"requestHeadersInserted\": null, \"responseCodeSent\": null, \"httpRequest\": { \"clientIp\": \"103.28.246.208\", \"country\": \"IN\", \"headers\": [ { \"name\": \"Host\", \"value\": \"demo-waf.us-east-1.elasticbeanstalk.com\" }, { \"name\": \"User-Agent\", \"value\": \"python-requests/2.31.0\" }, { \"name\": \"Accept-Encoding\", \"value\": \"gzip, deflate\" }, { \"name\": \"Accept\", \"value\": \"*/*\" }, { \"name\": \"Connection\", \"value\": \"keep-alive\" } ], \"uri\": \"/\", \"args\": \"\", \"httpVersion\": \"HTTP/1.1\", \"httpMethod\": \"GET\", \"requestId\": \"1-64e3bacb-375f996b44c9676010a533a0\" } }"
+    }
+  ]
+}
+
+
+//This is for lambda code for cloudwatch to dynamodb 
